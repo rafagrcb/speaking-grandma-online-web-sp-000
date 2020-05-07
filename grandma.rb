@@ -1,9 +1,9 @@
 def speak_to_grandma(phrase)
-  if phrase.match(/\p{Lower}/) == nil
-    return('NO, NOT SINCE 1938!')
-  elsif
-    return("HUH?! SPEAK UP, SONNY!")
-  else phrase == "I LOVE YOU GRADMA!"
-    return("I LOVE YOU TOO PUMPKIN!")
-  end
-end
+   if phrase == "I LOVE YOU GRANDMA!"
+				        "I LOVE YOU TOO PUMPKIN"
+				 elsif phrase != phrase.upcase
+				        "HUH!? SPEAK UP SONNY!"
+				 else phrase == phrase.upcase
+				        "NO, NOT SINCE 1938!"
+				end
+end 
